@@ -100,20 +100,15 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 
 local opt = vim.o
 opt.relativenumber = true
-opt.timeoutlen = 0
 opt.expandtab = true
 opt.smartindent = true
-opt.updatetime = 0
 
 vim.wo.wrap = true
 vim.wo.linebreak = true
 
 local o = vim.o
-local g = vim.g
-
 o.laststatus = 3
 o.showmode = false
-
 o.clipboard = "unnamedplus"
 o.number = true
 o.numberwidth = 2
