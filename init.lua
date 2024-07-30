@@ -21,10 +21,20 @@ require("lazy").setup({
 			"nvim-tree/nvim-tree.lua",
 			lazy = false,
 			cmd = { "NvimTreeToggle" },
-			require("nvim-tree").setup(),
+			config = function()
+				require("nvim-tree").setup()
+			end,
 		},
 		{
 			"williamboman/mason.nvim",
+			opts = {
+				ensure_installed = {
+					"lua-language-server",
+					"stylua",
+					"biome",
+					"clang-format",
+				},
+			},
 		},
 		{
 			"stevearc/conform.nvim",
