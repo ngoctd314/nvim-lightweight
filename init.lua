@@ -121,4 +121,3 @@ o.signcolumn = "yes"
 o.splitbelow = true
 o.splitright = true
 vim.cmd("highlight clear SignColumn")
-vim.cmd("hi! LineNr guibg=none ctermgb=none")
