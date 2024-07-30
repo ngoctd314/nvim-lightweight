@@ -31,7 +31,6 @@ require("lazy").setup({
 			dependencies = { "nvim-lua/plenary.nvim" },
 		},
 	},
-	checker = { enabled = false },
 })
 
 vim.g.mapleader = " "
@@ -73,6 +72,9 @@ local opt = vim.o
 opt.relativenumber = true
 opt.expandtab = true
 opt.smartindent = true
+opt.shiftwidth = 3
+opt.tabstop = 3
+opt.softtabstop = 3
 
 vim.wo.wrap = true
 vim.wo.linebreak = true
@@ -86,4 +88,3 @@ o.numberwidth = 2
 o.signcolumn = "yes"
 o.splitbelow = true
 o.splitright = true
-vim.cmd("highlight clear SignColumn")
