@@ -26,35 +26,6 @@ require("lazy").setup({
 			end,
 		},
 		{
-			"williamboman/mason.nvim",
-			opts = {
-				ensure_installed = {
-					"lua-language-server",
-					"stylua",
-					"biome",
-					"clang-format",
-				},
-			},
-		},
-		{
-			"stevearc/conform.nvim",
-			event = "BufWritePre", -- uncomment for format on save
-			config = function()
-				require("conform").setup({
-					formatters_by_ft = {
-						lua = { "stylua" },
-						json = { "biome" },
-					},
-
-					format_on_save = {
-						-- These options will be passed to conform.format()
-						timeout_ms = 500,
-						lsp_fallback = true,
-					},
-				})
-			end,
-		},
-		{
 			"nvim-telescope/telescope.nvim",
 			tag = "0.1.8",
 			dependencies = { "nvim-lua/plenary.nvim" },
