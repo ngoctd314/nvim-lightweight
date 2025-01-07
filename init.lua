@@ -38,10 +38,10 @@ vim.g.maplocalleader = "\\"
 
 local map = vim.keymap.set
 
-map("n", "<C-h>", "<C-w>h")
-map("n", "<C-j>", "<C-w>j")
-map("n", "<C-k>", "<C-w>k")
-map("n", "<C-l>", "<C-w>l")
+map("n", "<leader>h", "<C-w>h")
+map("n", "<leader>j", "<C-w>j")
+map("n", "<leader>k", "<C-w>k")
+map("n", "<leader>l", "<C-w>l")
 
 local telescope_builtin = require("telescope.builtin")
 map("n", "<leader>ff", function()
